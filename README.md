@@ -21,6 +21,7 @@
 ## 💡 Solution
 
 Fraud Lens is a Bob-powered investigation tool that turns unstructured cyber fraud intelligence (transaction records, call logs, device IDs, accused names) into a temporal knowledge graph of people, accounts, SIMs, devices and calls. It detects the fraud pattern (including SIM-swap chains), maps the kingpin → mule → victim hierarchy, and lets investigators ask Bob questions in plain language instead of tracing links by hand over weeks. It ends with an FIR-ready case brief that has evidence IDs, mapped legal sections and concrete freeze, telecom, bank and field actions.
+
 ---
 
 ## ✨ Key Features
@@ -28,8 +29,6 @@ Fraud Lens is a Bob-powered investigation tool that turns unstructured cyber fra
 - **Feature 1:Entity and relationship extraction**The Entity Engine pulls people, accounts, SIMs, phones and devices/IMEI out of raw records. It resolves and normalizes duplicates into one temporal knowledge graph.
 - **Feature 2:Fraud pattern and SIM-swap detection** The Fraud Engine uses temporal patterns, centrality and community analysis to identify the pattern type. Its SIM-swap Chain Detector links swap events, IMEI changes and OTP calls into a per-victim timeline.
 - **Feature 3:Hierarchy mapping and Bob Chat.** Kingpin → mule → victim structure is shown on an interactive graph and timeline. Investigators can trace, explain, challenge, compare and simulate through Bob, without writing queries.
-- **Feature 4:** [Optional]
-- **Feature 5:** [Optional]
 
 ---
 
@@ -69,18 +68,18 @@ Fraud Lens is a Bob-powered investigation tool that turns unstructured cyber fra
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/[your-repo].git
-cd [your-repo]
+git clone https://github.com/jainygandhi04/bob-ai-hackathon-tetrapack.git
+cd bob-ai-hackathon-tetrapack
 
 # 2. Install dependencies
-[your install command here]
+pip -r requirement.txt
 
 # 3. Configure environment
 cp .env.example .env
 # Edit .env with your values
 
 # 4. Run the project
-[your run command here]
+
 ```
 
 ---
@@ -92,7 +91,7 @@ cp .env.example .env
 | 📹 Demo Video | [See demo/demo-video-link.txt](demo/demo-video-link.txt) |
 | 🌐 Live Demo | [See demo/live-demo-url.txt](demo/live-demo-url.txt) |
 | 🖼️ Screenshots | [See demo/screenshots/](demo/screenshots/) |
-| 📊 Presentation | [See presentation/slides.pdf](presentation/) |
+| 📊 Presentation | [See presentation/FraudLens_TetraPack.pptx](presentation/) |
 
 ---
 
