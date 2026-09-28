@@ -34,13 +34,13 @@ Fraud Lens is a Bob-powered investigation tool that turns unstructured cyber fra
 
 ## 🛠️ Tech Stack
 
-| Category | Technologies |
-|---|---|
-| **Languages** | [e.g., Python, TypeScript] |
-| **Frameworks** | [e.g., FastAPI, React] |
-| **IBM Technologies** | [e.g., watsonx.ai, IBM Bob, IBM Cloud] |
-| **Databases** | [e.g., PostgreSQL, Redis] |
-| **Other** | [e.g., Docker, GitHub Actions] |
+| **Category**         | **Technologies**              |
+| -------------------- | ----------------------------- |
+| **Languages**        | Python, TypeScript            |
+| **Frameworks**       | Next.js, React, FastAPI       |
+| **IBM Technologies** | IBM Bob                       |
+| **Other**            | Pandas, NetworkX, Pytest, CSV |
+
 
 ---
 
@@ -79,7 +79,8 @@ cp .env.example .env
 # Edit .env with your values
 
 # 4. Run the project
-
+Backend: python3 -m uvicorn main:app --reload
+Frontend: npm run dev
 ```
 
 ---
