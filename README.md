@@ -20,7 +20,7 @@
 
 ## 💡 Solution
 
-Fraud Lens is a Bob-powered investigation tool that turns unstructured cyber fraud intelligence (transaction records, call logs, device IDs, accused names) into a temporal knowledge graph of people, accounts, SIMs, devices and calls. It detects the fraud pattern (including SIM-swap chains), maps the kingpin → mule → victim hierarchy, and lets investigators ask Bob questions in plain language instead of tracing links by hand over weeks. It ends with an FIR-ready case brief that has evidence IDs, mapped legal sections and concrete freeze, telecom, bank and field actions.
+> Fraud Lens is a Bob-powered investigation tool that turns unstructured cyber fraud intelligence (transaction records, call logs, device IDs, accused names) into a temporal knowledge graph of people, accounts, SIMs, devices and calls. It detects the fraud pattern (including SIM-swap chains), maps the kingpin → mule → victim hierarchy, and lets investigators ask Bob questions in plain language instead of tracing links by hand over weeks. It ends with an FIR-ready case brief that has evidence IDs, mapped legal sections and concrete freeze, telecom, bank and field actions.
 
 ---
 
@@ -79,8 +79,8 @@ cp .env.example .env
 # Edit .env with your values
 
 # 4. Run the project
-Backend: python3 -m uvicorn main:app --reload
-Frontend: npm run dev
+Terminal 1- Backend: python3 -m uvicorn main:app --reload
+Terminal 2- Frontend: npm run dev
 ```
 
 ---
@@ -90,7 +90,6 @@ Frontend: npm run dev
 | Artifact | Link |
 |---|---|
 | 📹 Demo Video | [See demo/demo-video-link.txt](demo/demo-video-link.txt) |
-| 🌐 Live Demo | [See demo/live-demo-url.txt](demo/live-demo-url.txt) |
 | 🖼️ Screenshots | [See demo/screenshots/](demo/screenshots/) |
 | 📊 Presentation | [See presentation/FraudLens_TetraPack.pptx](presentation/) |
 
@@ -100,14 +99,12 @@ Frontend: npm run dev
 
 > Be honest — judges appreciate transparency over overclaiming.
 
-- [Limitation 1: e.g., "Authentication is mocked — not production-ready"]
-- [Limitation 2: e.g., "Only tested on Chrome"]
-- [Limitation 3: e.g., "Feature X is scaffolded but not fully implemented"]
+- Unable to analyze new files
 
 ---
 
-## 🏅 What We're Most Proud Of
+## What We're Most Proud of
 
-[Tell the judges what part of your submission is strongest and worth paying close attention to.]
+>
 
 ---
