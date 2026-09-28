@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "cyber-fraud-analyzer": {
+      "command": "python",
+      "args": ["-m", "mcp_server"],
+      "cwd": "${workspaceFolder}/src",
+      "env": {}
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "CIRCULAR_TRANSACTION": [
+    {
+      "legal_reference": "IT Act 66C/66D",
+      "statute": "Information Technology Act 2000",
+      "section": "66C / 66D",
+      "description": "Identity theft and cheating by personation using computer resources. Circular transactions may involve use of stolen credentials or identity to operate accounts."
+    },
+    {
+      "legal_reference": "PMLA Section 3/4",
+      "statute": "Prevention of Money Laundering Act 2002",
+      "section": "3/4",
+      "description": "Money laundering offence. Circular fund movement is a classic layering technique under PMLA."
+    }
+  ],
+  "TRANSACTION_CHAIN": [
+    {
+      "legal_reference": "PMLA Section 3",
+      "statute": "Prevention of Money Laundering Act 2002",
+      "section": "3",
+      "description": "Layering of proceeds of crime through multi-hop transfers."
+    },
+    {
+      "legal_reference": "BSA Section 63 Evidence Checklist",
+      "statute": "Banking Secrecy Act",
+      "section": "63",
+      "description": "Suspicious Activity Report (SAR) trigger: structured transfers designed to layer funds."
+    }
+  ],
+  "SIM_SWAP_CHAIN": [
+    {
+      "legal_reference": "IT Act 66C",
+      "statute": "Information Technology Act 2000",
+      "section": "66C",
+      "description": "Identity theft — use of stolen SIM or credentials to access banking accounts."
+    },
+    {
+      "legal_reference": "BNS Section 420",
+      "statute": "Bharatiya Nyaya Sanhita",
+      "section": "420",
+      "description": "Cheating and dishonestly inducing delivery of property."
+    },
+    {
+      "legal_reference": "TRAI SIM Swap Guidelines",
+      "statute": "TRAI Regulations",
+      "section": "SIM Swap Fraud",
+      "description": "Telecom Regulatory Authority of India guidelines on SIM swap fraud reporting."
+    }
+  ],
+  "SHARED_INFRASTRUCTURE": [
+    {
+      "legal_reference": "PMLA Section 3",
+      "statute": "Prevention of Money Laundering Act 2002",
+      "section": "3",
+      "description": "Conspiracy to launder money using shared devices/infrastructure."
+    }
+  ],
+  "RAPID_FUND_MOVEMENT": [
+    {
+      "legal_reference": "BSA Section 63 Evidence Checklist",
+      "statute": "Banking Secrecy Act",
+      "section": "63",
+      "description": "Rapid sequential transfers are a known SAR trigger for structuring/layering."
+    }
+  ],
+  "TEMPORAL_ANOMALY": [
+    {
+      "legal_reference": "IT Act 66",
+      "statute": "Information Technology Act 2000",
+      "section": "66",
+      "description": "Unauthorised access to computer systems evidenced by anomalous timing."
+    }
+  ]
+}

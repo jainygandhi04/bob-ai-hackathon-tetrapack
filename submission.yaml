@@ -1,0 +1,127 @@
+submission:
+  project_name: "Cyber Fraud Analyzer"
+  team: "IBM Bob Hackathon"
+  version: "1.0.0"
+
+  description: >
+    An end-to-end investigator workbench for cyber cell officers.
+    Upload any case evidence (bank CSV, CDR, SIM-event logs, complaint text)
+    and get an instant knowledge graph, SIM-swap chain timeline, ranked suspect
+    hierarchy, min-cut network disruption plan, and a FIR-ready Markdown brief —
+    all powered by deterministic Python engines and surfaced through a React UI
+    and 12 Bob MCP tools.
+
+  problem_statement: "docs/problem-statement.md"
+  solution_overview:  "docs/solution-overview.md"
+  architecture:       "docs/architecture.md"
+  build_plan:         "docs/build-plan.md"
+
+  modules:
+    - id: 1
+      name: "Temporal Knowledge Graph + Evidence Registry"
+      folder: "src/graph/, src/mock_data/"
+      tests: "src/tests/test_graph_module.py"
+      tests_count: 11
+      status: DONE
+
+    - id: 2
+      name: "Entity Engine — normalisation, Hinglish/Devanagari, resolution"
+      folder: "src/engines/entity/"
+      tests: "src/tests/test_entity_module.py"
+      tests_count: 30
+      status: DONE
+
+    - id: 3
+      name: "Fraud Engine — SIM-swap chains, mule scoring, pattern, hierarchy"
+      folder: "src/engines/fraud/"
+      tests: "src/tests/test_fraud_module.py"
+      tests_count: 32
+      status: DONE
+
+    - id: 4
+      name: "Action Engine — betweenness, min-cut freeze set, simulation"
+      folder: "src/engines/action/"
+      tests: "src/tests/test_action_module.py"
+      tests_count: 31
+      status: DONE
+
+    - id: 5
+      name: "Evidence Engine — confidence scoring, contradictions, challenge mode"
+      folder: "src/engines/evidence/"
+      tests: "src/tests/test_evidence_module.py"
+      tests_count: 35
+      status: DONE
+
+    - id: 6
+      name: "Legal layer + FIR-ready Brief generator"
+      folder: "src/legal/, src/brief/"
+      tests: "src/tests/test_legal_module.py"
+      tests_count: 40
+      status: DONE
+
+    - id: 7
+      name: "MCP server — 12 Bob tools"
+      folder: "src/mcp_server/"
+      tests: "src/tests/test_mcp_module.py"
+      tests_count: 49
+      status: DONE
+
+    - id: 8
+      name: "Investigator UI — FastAPI backend + React/Vite frontend"
+      folder: "src/ui/"
+      tests: "src/tests/test_ui_module.py, src/tests/test_case_upload.py"
+      tests_count: 55
+      status: DONE
+
+    - id: 9
+      name: "Case memory + Wizard UI + Polish"
+      folder: "src/case_memory/, src/ui/src/CaseSidebar.jsx"
+      tests: "src/tests/test_case_memory.py"
+      tests_count: 30
+      status: DONE
+
+  total_tests: 313
+  all_passing: true
+
+  key_files:
+    backend:     "src/ui/backend.py"
+    frontend:    "src/ui/src/"
+    mcp_server:  "src/mcp_server/server.py"
+    mcp_config:  ".mcp.json"
+    engines:     "src/engines/"
+    case_memory: "src/case_memory/__init__.py"
+    mock_data:   "src/mock_data/JAMTARA-001/"
+
+  how_to_run:
+    backend:
+      cmd: "cd src && uvicorn ui.backend:app --reload --port 8000"
+    frontend:
+      cmd: "cd src/ui && npm install && npm run dev"
+    mcp_server:
+      cmd: "cd src && python -m mcp_server"
+    tests:
+      cmd: "cd src && python -m pytest tests/ -q"
+    demo_data:
+      cmd: "cd src && python -m mock_data.load"
+
+  bob_mcp_tools:
+    - build_graph
+    - graph_summary
+    - detect_pattern
+    - detect_simswap_chains
+    - score_mules
+    - rank_hierarchy
+    - plan_disruption
+    - score_confidence
+    - detect_contradictions
+    - challenge
+    - map_legal
+    - generate_brief
+
+  design_decisions:
+    - "Engines are 100% deterministic — no LLM calls inside them"
+    - "Bob does language + planning; engines do the maths"
+    - "Any case can be uploaded — not limited to JAMTARA-001 demo data"
+    - "Case memory links suspects across multiple cases automatically"
+    - "4-step guided wizard in sidebar removes need to use API directly"
+    - "All 313 unit tests pass before every commit"

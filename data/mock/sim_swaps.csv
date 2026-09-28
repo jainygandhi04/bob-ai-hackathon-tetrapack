@@ -1,0 +1,3 @@
+swap_id,person_id,old_sim_id,new_sim_id,old_device_id,new_device_id,phone_id,carrier,requested_at,completed_at,channel,ip_address,location_id,initiated_by,verification_method
+SWAP001,P003,SIM003,SIM011,DEV003,DEV004,PH003,Airtel,2024-01-03 14:00:00,2024-01-03 14:35:00,ONLINE,10.20.30.40,LOC002,CUSTOMER,OTP_EMAIL
+SWAP002,P005,SIM005,SIM012,DEV006,DEV007,PH005,Jio,2024-01-08 11:00:00,2024-01-08 11:45:00,ONLINE,10.20.30.41,LOC006,CUSTOMER,OTP_EMAIL

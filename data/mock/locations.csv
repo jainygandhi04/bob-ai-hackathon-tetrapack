@@ -1,0 +1,11 @@
+location_id,name,latitude,longitude,location_type,city,state,country,created_at
+LOC001,Bangalore Central,12.9716,77.5946,BRANCH,Bangalore,Karnataka,India,2023-01-01
+LOC002,Delhi Connaught Place,28.6315,77.2167,BRANCH,Delhi,Delhi,India,2023-01-01
+LOC003,Pune FC Road,18.5204,73.8567,BRANCH,Pune,Maharashtra,India,2023-01-01
+LOC004,Mumbai Bandra,19.0596,72.8295,ATM,Mumbai,Maharashtra,India,2023-01-01
+LOC005,Chennai Anna Salai,13.0827,80.2707,BRANCH,Chennai,Tamil Nadu,India,2023-01-01
+LOC006,Ahmedabad CG Road,23.0225,72.5714,ATM,Ahmedabad,Gujarat,India,2023-01-01
+LOC007,Hyderabad Banjara Hills,17.4126,78.4071,BRANCH,Hyderabad,Telangana,India,2023-01-01
+LOC008,Kolkata Park Street,22.5726,88.3639,BRANCH,Kolkata,West Bengal,India,2023-01-01
+LOC009,Kochi MG Road,9.9312,76.2673,ATM,Kochi,Kerala,India,2023-01-01
+LOC010,Jaipur MI Road,26.9124,75.7873,BRANCH,Jaipur,Rajasthan,India,2023-01-01

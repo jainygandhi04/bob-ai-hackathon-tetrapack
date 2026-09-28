@@ -1,0 +1,22 @@
+# NOTE: replace with the original validate.yml from the official template.
+name: Validate Submission
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required files and YAML
+        run: |
+          pip install pyyaml
+          test -f submission.yaml
+          test -f docs/setup-guide.md
+          test -f demo/demo-video-link.txt
+          python - <<'PY'
+          import yaml
+          d = yaml.safe_load(open("submission.yaml"))
+          s = d["submission"]
+          for k in ("title", "problem_statement", "solution_summary", "key_features"):
+              assert s.get(k), f"submission.{k} is empty"
+          assert d["team"]["name"], "team.name is empty"
+          PY
