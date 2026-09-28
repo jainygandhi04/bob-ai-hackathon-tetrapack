@@ -103,8 +103,12 @@ Terminal 2- Frontend: npm run dev
 
 ---
 
-## What We're Most Proud of
+## 🏅 What We're Most Proud of
 
->
+>The SIM-swap chain detector is built for the Jamtara pattern. It ties swap events, IMEI changes and OTP calls into one per-victim timeline, which is the exact link investigators have been tracing by hand.
+
+>Every finding is traceable and legally framed. Claims in the brief carry evidence IDs, contradictions between sources are flagged rather than hidden, and findings are mapped to IT Act 66C/66D and BNS sections with a Sec 63 BSA certificate checklist and a "verify with legal officer" note. We designed the output to fit how a cyber cell drafts an FIR.
+
+>Bob makes it usable by non-technical officers. Investigators ask questions in plain language, including to trace, challenge and simulate, instead of writing queries.
 
 ---
